@@ -32,15 +32,14 @@ while seat[chosen_row][chosen_collum] != "": #if the seat is not void (taken)
   
 
 if seat[chosen_row][chosen_collum] == "":
-  seat[chosen_row][chosen_collum] = 1
+  seat[chosen_row][chosen_collum] = initial
   print("your booking is sucessful")
 
 for x in range(rownum):
   row = ""
   for y in range(colnum):
     row += str(seat[x][y])+ ","
-
-row = row[:-1]
-print(row)
+  row = row[:-1]
+  print(row)
 
 
