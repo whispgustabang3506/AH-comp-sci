@@ -2,14 +2,15 @@
 # This variation uses two fixed loops
 
 
-myList = [3,4,9,7,1]
+
+myList = ["p","o","r","t","y"]
 
 counter = 0 
 #start from the right
 for outer in range (len(myList)-1,0,-1):
  for inner in range(outer):
    #compare two adjacent values
-   if myList[inner]>myList[inner+1]:
+   if ord(myList[inner]) > ord(myList[inner+1]): #ord() converts to ascii
      counter = counter + 1 
      #assign one of the values to a temp variable
      temp = myList[inner]
@@ -21,9 +22,3 @@ for outer in range (len(myList)-1,0,-1):
 print("Bubble sort complete")
 print(counter)
 print(myList)
-
-#adapt code so its in descending order 
-#if myList[inner]>myList[inner+1]: - changes to if myList[inner]<myList[inner+1]:
-#since its going of the order if its bigger swap but now its swapping if smaller 
-
-#change code so number of swaps is counted 
