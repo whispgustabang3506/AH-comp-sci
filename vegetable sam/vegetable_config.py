@@ -3,7 +3,13 @@ VEGETABLE_TYPES = {
         "score_value": 10,
         "size": 50,
         "spawn_weight": 3  # higher = more likely to spawn
+    },
+    "potato": {
+        "score_value": 15,
+        "size": 50,
+        "spawn_weight": 2
     }
+    
 }
 #this file is bascially useless for now  
 # Physics constants
